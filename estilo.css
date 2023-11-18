@@ -31,16 +31,21 @@ body {
     display: flex;
     position: relative;
     padding: 5px 5px;
-    background-image: linear-gradient(+50deg,rgb(57, 90, 201) 50%, orange 50%);
+    background-image: linear-gradient(+135deg,rgb(57, 90, 201) 50%, orange 50%);
     transform: translate(-55%, calc(0% + 22%));
 }
 .linkedin {
     border-radius: 20%;
-    width: 8.4%;
+    width: 9%;
     position: absolute;
     top: 90%;
     left: 85%;
     transition: transform 0.3s ease;
+}
+
+.linkedin img{
+    width: 100%;
+    height: 100%;
 }
 
 .linkedin:hover {
@@ -48,41 +53,55 @@ body {
 }
 
 .github {
-    width: 8%;
+    width: 9%;
     height: auto;
     position: absolute;
     top: 90%;
-    left: 71%;
+    left: 60%;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
-
+.github img {
+    width: 100%;
+    height: 100%;
+}
 .github:hover {
     transform: scale(1.1);
 }
 
 .workana {
-    width: 25%;
+    width: 9%;
     height: auto;
     position: absolute;
-    top: 92%;
-    left: 39%;
+    top: 90%;
+    left: 35%;
     display: flex;
     transition: transform 0.3s ease;
 }
 
+.workana img{
+    width: 100%;
+    height: 100%;
+}
 .workana:hover {
     transform: scale(1.1);
 }
 
 .freelas {
-    width: 25%;
+    width: 9%;
     height: auto;
     position: absolute;
     top: 90%;
     left: 7%;
     display: flex;
     transition: transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.freelas img{
+    width: 100%;
+    height: 100%;
 }
 
 .freelas:hover {
@@ -116,17 +135,35 @@ body {
 @media screen and (max-width: 819px) {
     .painel1 {
         width: 99% !important;
+        height: 100vw !important;
+        transform: translate(-2.5%, calc(0% + 0%)) !important;
     }
     .painel2 {
         width: 99% !important;
-        transform: translate(0%, calc(0% + 0%)) !important;
+        transform: translate(-2.5%, calc(0% + 0%)) !important;
         background-color: rgba(138, 43, 226) !important;
+        height: 80% !important;
     }
     .painel3{
         background-image: linear-gradient(to top,rgba(138, 43, 226), rgb(57, 90, 201)) !important;
         width: 99% !important;
-        transform: translate(0%, calc(0% + 0%)) !important;
+        transform: translate(-2.5%, calc(0% + 0%)) !important;
         border-radius: 10px !important;
+    }
+
+    .perfil{
+        transform: translate(-55%, calc(0% + 10%)) !important;
+    }
+
+    h2{
+        font-size: 5vw !important;
+        transform: translate(0%, calc(0% + 5%)) !important;
+
+    }
+
+    h3{
+        font-size: 2.5vw !important;
+        transform: translate(0%, calc(0% + 25%)) !important;
     }
 
     .base1{
@@ -138,7 +175,7 @@ body {
     .perfil {
         top: 2% !important;
     }
-    .instagram {
+    .linkedin {
         top: 89%;
     }
     
@@ -147,12 +184,55 @@ body {
     }
     
     .workana {
-        top: 91%;
+        top: 89%;
     }
     
     .freelas {
         top: 89%;
     }
+
+    .flutuantes1{
+        transform: translate(0%, calc(0% + -80%)) !important;
+    }
+
+    .flutuantes2{
+        transform: translate(0%, calc(0% + -185%)) !important;
+    }
+
+    .flutuantes3{
+        transform: translate(0%, calc(0% + -185%)) !important;
+    }
+
+    .flutuantes4{
+        transform: translate(0%, calc(0% + -80%)) !important;
+    }
+
+    .projeto1{
+        height: 35vw !important;
+        top: 18% !important;
+    }
+
+    .projeto1 h2{
+        top: -1% !important;
+        font-size: 4vw !important;
+    }
+
+    .feedback1{
+        width: 60vw !important;
+        height: 20% !important;
+        max-width: 100vw !important;
+        transform: translate(17vw, calc(100% + 0%)) !important;
+    }
+
+    .feedback1 h2{
+        font-size: 3vw !important;
+        top: 11% !important;
+    }
+
+    .feedback1 img {
+        width: 100% !important;
+    }
+
 }
 
 .perfil img {
@@ -196,7 +276,6 @@ h3 {
     color: rgb(255, 166, 0);
     text-align: center;
     width: 85%;
-    font-size: 125%;
     top: 65%;
     left: 8%;
     background-color:rgb(57, 90, 201);
@@ -237,7 +316,7 @@ h3 {
     height: 100%;
     width: 45%;
     margin: 3%;
-    border-radius: 1px;
+    border-radius: 10px;
     transform: translate(110%, calc(0% + -50%));
     display: flex;
 }
@@ -379,7 +458,7 @@ img{
     width: 91%;
     font-size: 1.5vw;
     top: 1%;
-    left: 1.5%;
+    left: 2%;
     background-color: rgb(57, 90, 201);
     border-radius: 10px;
     font-weight: 800;
@@ -399,7 +478,7 @@ img{
 
     background-color: blueviolet;
     border-radius: 10px;
-    width: auto;
+    width: 25vw;
     height: auto;
     position: absolute;
     transform: translate(20%, calc(80% + 0%));
@@ -407,6 +486,7 @@ img{
     display: flex;
     max-width: 70%;
     transition: transform 0.3s ease;
+    transform: translate(9vw, calc(100% + 0%));
 
 }
 
