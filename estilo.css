@@ -139,7 +139,7 @@ body {
     }
 
     .perfil{
-        transform: translate(-60%, calc(0% + 10%)) !important;
+        transform: translate(-57%, calc(0% + 10%)) !important;
     }
     .painel1 h2{
         transform: translate(-1.5%, calc(0% + 5%)) !important;
@@ -533,7 +533,7 @@ img{
     border-radius: 10px;
     align-items: center;
     object-fit: cover;
-    width: 85%;
+    width: 80%;
 }
 
 .feedback1 {
