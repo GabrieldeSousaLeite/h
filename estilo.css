@@ -201,9 +201,10 @@ body {
     }
 
     .projeto1 h2{
-        top: -1% !important;
+        top: -2% !important;
+        left: -6% !important;
         font-size: 4vw !important;
-        transform: translate(-0vw, calc(0% + 0%)) !important;
+        width: 110% !important;
     }
 
     .feedback1{
@@ -505,6 +506,7 @@ img{
     animation-name: moverDiv;
     animation-duration: 0.8s;
     animation-delay: 3s;
+    overflow: hidden;
 
 }
 
