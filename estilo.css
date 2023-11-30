@@ -131,6 +131,11 @@ body {
         background: rgb(138, 43, 226) !important;
         height: 80% !important;
     }
+
+    .painel2 h2{
+        background: rgb(138, 43, 226) !important;
+    }
+
     .painel3{
         background-image: linear-gradient(to top,rgba(138, 43, 226), rgb(57, 90, 201) 100%) !important;
         width: 99% !important;
@@ -197,13 +202,25 @@ body {
 
     .projeto1{
         height: 35vw !important;
-        top: 18% !important;
+        top: 15% !important;
     }
 
     .projeto1 h2{
         top: -2% !important;
         left: -6% !important;
-        font-size: 4vw !important;
+        font-size: 3.5vw !important;
+        width: 110% !important;
+    }
+
+    .projeto2{
+        height: 35vw !important;
+        top: 58% !important;
+    }
+
+    .projeto2 h2{
+        top: -2% !important;
+        left: -6% !important;
+        font-size: 3.5vw !important;
         width: 110% !important;
     }
 
@@ -216,6 +233,7 @@ body {
     .feedback1 h2{
         font-size: 3vw !important;
         top: 11% !important;
+        background: transparent !important;
     }
 
     .feedback1 img {
@@ -531,6 +549,54 @@ img{
 }
 
 .projeto1 img {
+    transform: translate( 0%, calc(8%));
+    border-radius: 10px;
+    align-items: center;
+    object-fit: cover;
+    width: 80%;
+}
+
+.projeto2 {
+
+    background-color: orange;
+    border-radius: 10px;
+    width: 56%;
+    height: 16vw;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    padding: 2%;
+    display: flex;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation-name: moverDiv;
+    animation-duration: 0.8s;
+    animation-delay: 3s;
+    overflow: hidden;
+
+}
+
+.projeto2:hover {
+    transform: scale(1.1);
+}
+
+.projeto2 h2 {
+
+    text-decoration: none;
+    position: absolute;
+    color: rgb(255, 166, 0);
+    width: 91%;
+    font-size: 1.5vw;
+    top: 1%;
+    left: 2%;
+    background-color: rgb(57, 90, 201);
+    border-radius: 10px;
+    font-weight: 800;
+    margin: 1%;
+    line-height: 0.8;
+}
+
+.projeto2 img {
     transform: translate( 0%, calc(8%));
     border-radius: 10px;
     align-items: center;
