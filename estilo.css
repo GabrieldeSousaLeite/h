@@ -32,13 +32,13 @@ body {
     position: relative;
     padding: 5px 5px;
     background-image: linear-gradient(+135deg,rgb(57, 90, 201) 50%, orange 50%);
-    transform: translate(-56%, calc(0% + 22%));
+    transform: translate(-57%, calc(0% + 14%));
 }
 .linkedin {
     border-radius: 20%;
-    width: 9%;
+    width: 8%;
     position: absolute;
-    top: 90%;
+    top: 87%;
     left: 85%;
     transition: transform 0.3s ease;
 }
@@ -53,10 +53,10 @@ body {
 }
 
 .github {
-    width: 9%;
+    width: 8%;
     height: auto;
     position: absolute;
-    top: 90%;
+    top: 87%;
     left: 60%;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -67,24 +67,22 @@ body {
 }
 
 .workana {
-    width: 9%;
+    width: 8%;
     position: absolute;
-    top: 90%;
+    top: 87%;
     left: 35%;
     display: flex;
     transition: transform 0.3s ease;
 }
-
 
 .workana:hover {
     transform: scale(1.1);
 }
 
 .freelas {
-    width: 9%;
-    height: 8%;
+    width: 8%;
     position: absolute;
-    top: 90%;
+    top: 87%;
     left: 7%;
     display: flex;
     transition: transform 0.3s ease;
@@ -102,9 +100,11 @@ body {
     width: 97%;
     height: 97%; 
     border-radius: 12px;
-    align-items: center;
-    justify-items: center;
-    position: relative;
+    overflow: hidden;
+}
+
+.painel2 .base1 {
+    height: 98% !important;
 }
 
 .base2 {
@@ -114,22 +114,43 @@ body {
     width: 97%;
     height: 99%;
     border-radius: 12px;
-    align-items: center;
-    justify-items: center;
-    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 540px){
+    .painel1 .base1 h2{
+        transform: translate(7%, calc(0% + 100%)) !important;
+
+    }
+
+    .painel1 h3{
+        transform: translate(7%, calc(0% + 125%)) !important;
+
+    }
+
+    .painel2 .feedback1 h2 {
+        top: 13% !important;
+        
+    }
+    
 }
 
 @media screen and (max-width: 819px) {
+    body {
+        height: 330vw;
+    }
     .painel1 {
         width: 99% !important;
-        height: 100vw !important;
+        height: 30% !important;
         transform: translate(-2.5%, calc(0% + 0%)) !important;
     }
+
     .painel2 {
         width: 99% !important;
         transform: translate(-2.5%, calc(0% + 0%)) !important;
         background: rgb(138, 43, 226) !important;
-        height: 80% !important;
+        height: 34% !important;
+        margin-top: 3%;
     }
 
     .painel2 h2{
@@ -139,24 +160,32 @@ body {
     .painel3{
         background-image: linear-gradient(to top,rgba(138, 43, 226), rgb(57, 90, 201) 100%) !important;
         width: 99% !important;
+        height: 34% !important;
         transform: translate(-2.5%, calc(0% + 0%)) !important;
         border-radius: 10px !important;
+        margin-top: 3%;
     }
 
     .perfil{
         transform: translate(-57%, calc(0% + 10%)) !important;
     }
-    .painel1 h2{
-        transform: translate(-1.5%, calc(0% + 5%)) !important;
+
+    h3{
+        transform: translate(9%, calc(0% + 125%)) !important;
+        font-size: 2.5vw !important;
+        width: 79vw !important;
     }
 
     h2{
-        font-size: 5vw !important;
+        font-size: 4vw !important;
+        transform: translate(-1%, calc(-0% + 8%)) !important;
+        position: fixed;
     }
 
-    h3{
-        font-size: 2.5vw !important;
-        transform: translate(-1.5%, calc(0% + 25%)) !important;
+    .painel1 h2{
+        transform: translate(9%, calc(0% + 100%)) !important;
+        width: 79vw !important;
+        position: absolute !important;
     }
 
     .base1{
@@ -185,59 +214,64 @@ body {
     }
 
     .flutuantes1{
-        transform: translate(-3%, calc(0% + -80%)) !important;
+        transform: translate(-3%, calc(0% + -83%)) !important;
     }
 
     .flutuantes2{
-        transform: translate(-3%, calc(0% + -185%)) !important;
+        transform: translate(-3%, calc(0% + -188%)) !important;
     }
 
     .flutuantes3{
-        transform: translate(-3%, calc(0% + -185%)) !important;
+        transform: translate(-3%, calc(0% + -188%)) !important;
     }
 
     .flutuantes4{
-        transform: translate(-3%, calc(0% + -80%)) !important;
+        transform: translate(-3%, calc(0% + -83%)) !important;
     }
 
     .projeto1{
-        height: 35vw !important;
-        top: 16% !important;
+        height: 47vw !important;
+        top: 4% !important;
     }
 
     .projeto1 h2{
-        top: -2% !important;
+        top: -2.6% !important;
         left: -6% !important;
         font-size: 3.5vw !important;
         width: 110% !important;
     }
 
     .projeto2{
-        height: 35vw !important;
-        top: 58% !important;
+        height: 47vw !important;
+        top: 65% !important;
     }
 
     .projeto2 h2{
-        top: -2% !important;
+        top: -2.6% !important;
         left: -6% !important;
         font-size: 3.5vw !important;
         width: 110% !important;
     }
 
     .feedback1{
-        width: 60% !important;
+        width: 80% !important;
         max-width: 100vw !important;
-        transform: translate(-8vw, calc(40% + 0%)) !important;
+        transform: translate(-4vw, calc(0% + 1%)) !important;
     }
 
     .feedback1 h2{
         font-size: 3vw !important;
-        top: 11% !important;
+        top: 18% !important;
         background: transparent !important;
     }
 
     .feedback1 img {
         width: 100% !important;
+    }
+
+    .rolagem{
+        height: 86% !important;
+        transform: translate(6%, calc(-0% + 17%)) !important;
     }
 
 }
@@ -253,15 +287,17 @@ h2 {
     position: absolute;
     color: rgb(255, 166, 0);
     text-align: center;
-    width: 85%;
-    font-size: 200%;
-    top: 56%;
-    left: 8%;
+    width: 36.5vw;
+    font-size: 1vw;
     background-color: rgb(57, 90, 201);
     border-radius: 10px;
     font-size: 2vw;
     padding: 5px 5px;
 
+}
+
+.painel1 h2 {
+    transform: translate(9%, calc(0% + 90%));
 }
 
 .painel2 h2 {
@@ -282,13 +318,12 @@ h3 {
     position: absolute;
     color: rgb(255, 166, 0);
     text-align: center;
-    width: 85%;
-    top: 65%;
-    left: 8%;
+    width: 36.5vw;
+    transform: translate(9%, calc(0% + 130%));
     background-color:rgb(57, 90, 201);
     border-radius: 10px;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     text-justify: left;
     padding: 5px 5px;
     
@@ -297,36 +332,37 @@ h3 {
 .painel1 {
     align-items: center;
     background-image: linear-gradient(to top, rgb(57, 90, 201), rgb(255, 190, 68) 50%);
-    height: 46.3%;
+    height: 42%;
     width: 45%;
-    margin: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
     border-radius: 12px;
-    transform: translate(0%, calc(-2.5% + 0%));
+    transform: translate(0%, calc(0% + 0%));
     display: flex;
     
 }
 
 .painel2 {
-
-    align-items: center;
     background-image: linear-gradient(to top, rgba(138, 43, 226)50%, rgb(100,88,212), rgb(57, 90, 201));
-    height: 53%;
+    height: 56%;
     width: 45%;
-    margin: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
     border-radius: 12px;
-    transform: translate(0%, calc(0% + -199.5%));
+    transform: translate(0%, calc(0% + -175%));
     display: flex;
 
 }
 
 .painel3 {
     align-items: center;
-    background-image: linear-gradient(to top,rgba(138, 43, 226, 0.9)30%, rgb(57, 90, 201), rgb(255, 190, 68), rgb(255, 190, 68) 110%);
+    background-image: linear-gradient(to top,rgba(138, 43, 226, 0.9)25%, rgb(57, 90, 201), rgb(255, 190, 68), rgb(255, 190, 68) 100%);
     height: 100%;
     width: 45%;
-    margin: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
     border-radius: 10px;
-    transform: translate(110%, calc(0% + -50%));
+    transform: translate(110%, calc(0% + -42%));
     display: flex;
 }
 
@@ -338,7 +374,7 @@ h3 {
     overflow: auto;
     position: absolute;
     align-items: center;
-    transform: translate(0%, calc(-65% + 0%));
+    transform: translate(-2%, calc(-83% + 0%));
     right: 6%;
 }
 
@@ -377,7 +413,7 @@ h3 {
     overflow: auto;
     align-items: center;
     position: absolute;
-    transform: translate(0%, calc(-170% + 0%));
+    transform: translate(-3%, calc(-188% + 0%));
     left: 51%;
 }
 
@@ -405,7 +441,7 @@ h3 {
   }
   
   .flutuantes2 img:hover::after {
-    opacity: 1;
+        opacity: 1;
   }
 
 .flutuantes3 {
@@ -416,7 +452,7 @@ h3 {
     overflow: auto;
     align-items: center;
     position: absolute;
-    transform: translate(0%, calc(-170% + 0%));
+    transform: translate(-3%, calc(-188% + 0%));
     right: 6%;
 }
 
@@ -455,7 +491,7 @@ h3 {
     overflow: auto;
     align-items: center;
     position: absolute;
-    transform: translate(0%, calc(-65% + 0%));
+    transform: translate(-3%, calc(-83% + 0%));
     left: 51%;
 }
 
@@ -512,11 +548,11 @@ img{
 
     background-color: orange;
     border-radius: 10px;
-    width: 56%;
-    height: 16vw;
+    width: 73%;
+    height: 22vw;
     position: absolute;
-    top: 10%;
-    left: 20%;
+    top: 2%;
+    left: 11%;
     padding: 2%;
     display: flex;
     cursor: pointer;
@@ -537,7 +573,7 @@ img{
     text-decoration: none;
     position: absolute;
     color: rgb(255, 166, 0);
-    width: 91%;
+    width: 92%;
     font-size: 1.5vw;
     top: 1%;
     left: 2%;
@@ -549,22 +585,22 @@ img{
 }
 
 .projeto1 img {
-    transform: translate( 0%, calc(8%));
+    transform: translate( 1.2%, calc(12%));
     border-radius: 10px;
     align-items: center;
     object-fit: cover;
-    width: 80%;
+    width: 98%;
 }
 
 .projeto2 {
 
     background-color: orange;
     border-radius: 10px;
-    width: 56%;
-    height: 16vw;
+    width: 73%;
+    height: 22vw;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 27%;
+    left: 11%;
     padding: 2%;
     display: flex;
     cursor: pointer;
@@ -585,7 +621,7 @@ img{
     text-decoration: none;
     position: absolute;
     color: rgb(255, 166, 0);
-    width: 91%;
+    width: 92%;
     font-size: 1.5vw;
     top: 1%;
     left: 2%;
@@ -597,26 +633,26 @@ img{
 }
 
 .projeto2 img {
-    transform: translate( 0%, calc(8%));
+    transform: translate( 1.2%, calc(12%));
     border-radius: 10px;
     align-items: center;
     object-fit: cover;
-    width: 80%;
+    width: 98%;
 }
 
 .feedback1 {
 
     background-color: blueviolet;
     border-radius: 10px;
-    width: 25vw;
+    width: 80%;
     height: auto;
     position: absolute;
     padding: 1%;
     display: flex;
-    max-width: 70%;
-    top: 13%;
-    right: 9vw;
+    top: 1%;
+    right: 3.5vw;
     transition: transform 0.3s ease;
+    cursor: pointer;
     
 }
 
@@ -626,13 +662,37 @@ img{
 
 .feedback1 img {
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .feedback1 h2 {
     background: none;
     height: 13%;
-    left: 30%;
-    top: 16%;
+    width: auto;
+    left: 60%;
+    top: 22%;
     font-weight: bolder;
     font-size: 1.2vw;
+}
+
+.rolagem{
+    transform: translate(6%, calc(-0% + 7%));
+    width: 90%;
+    height: 93.6%;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: transparent;
+
+}
+
+.rolagem::-webkit-scrollbar {
+    width: 0;
+
+}
+
+.base1 .rolagem {
+    height: 88.8%;
+    transform: translate(6%, calc(-0% + 13%));
 }
