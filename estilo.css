@@ -117,14 +117,14 @@ body {
     overflow: hidden;
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 500px){
     .painel1 .base1 h2{
-        transform: translate(7%, calc(0% + 100%)) !important;
+        transform: translate(6.8%, calc(0% + 50%)) !important;
 
     }
 
     .painel1 h3{
-        transform: translate(7%, calc(0% + 125%)) !important;
+        transform: translate(6.8%, calc(0% + 105%)) !important;
 
     }
 
@@ -172,18 +172,18 @@ body {
 
     h3{
         transform: translate(9%, calc(0% + 125%)) !important;
-        font-size: 2.5vw !important;
+        font-size: 2.64vw !important;
         width: 79vw !important;
     }
 
     h2{
-        font-size: 4vw !important;
+        font-size: 5vw !important;
         transform: translate(-1%, calc(-0% + 8%)) !important;
         position: fixed;
     }
 
     .painel1 h2{
-        transform: translate(9%, calc(0% + 100%)) !important;
+        transform: translate(9%, calc(0% + 80%)) !important;
         width: 79vw !important;
         position: absolute !important;
     }
