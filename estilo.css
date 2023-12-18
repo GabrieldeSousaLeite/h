@@ -1,7 +1,7 @@
 body {
-    background-image: url(imagens/wallpaperflare.com_wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+    background-image: linear-gradient(to right, transparent 50%, rgb(30, 30, 30) 50%);
+    background-size: 4px auto;
     height: 110vw;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
